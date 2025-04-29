@@ -1,5 +1,5 @@
-import { ruleThrowsComment } from './throws-comment'
+import { rule as ruleThrowAnnotations } from './throws-annotation'
 
 export const rules = {
-  'throws-comment': ruleThrowsComment,
+  'throws-annotation': ruleThrowAnnotations,
 }

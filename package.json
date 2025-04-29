@@ -27,10 +27,10 @@
   "bugs": "https://github.com/oosawy/throwspec/issues",
   "scripts": {
     "dev": "tsup ./src/index.ts --watch --outDir lib/",
-    "build": "tsup ./src/index.ts --outDir lib/",
+    "build": "tsup --clean ./src/index.ts --outDir lib/",
     "build:diagnostics": "tsc --build --diagnostics",
-    "docs:init": "eslint-doc-generator --init-rule-docs",
-    "docs:update": "eslint-doc-generator",
+    "docs:init": "npm run build && eslint-doc-generator --init-rule-docs",
+    "docs:update": "npm run build && eslint-doc-generator",
     "test": "vitest"
   },
   "license": "MIT",

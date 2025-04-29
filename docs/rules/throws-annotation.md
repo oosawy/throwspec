@@ -4,14 +4,6 @@
 
 <!-- end auto-generated rule header -->
 
-## Rule details
-
-Description of the rule would normally go here.
-
-## Examples
-
-Examples would normally go here.
-
 ## Options
 
 <!-- begin auto-generated rule options list -->
