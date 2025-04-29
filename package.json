@@ -1,0 +1,54 @@
+{
+  "name": "throwspec",
+  "version": "0.1.0",
+  "description": "Spec your throws!",
+  "main": "lib/index.js",
+  "files": [
+    "docs/",
+    "lib/"
+  ],
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "keywords": [
+    "eslint-plugin",
+    "typescript",
+    "error"
+  ],
+  "homepage": "https://www.npmjs.com/oosawy/throwspec",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oosawy/throwspec"
+  },
+  "bugs": "https://github.com/oosawy/throwspec/issues",
+  "scripts": {
+    "dev": "tsup ./src/index.ts --watch --outDir lib/",
+    "build": "tsup ./src/index.ts --outDir lib/",
+    "build:diagnostics": "tsc --build --diagnostics",
+    "docs:init": "eslint-doc-generator --init-rule-docs",
+    "docs:update": "eslint-doc-generator",
+    "test": "vitest"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@typescript-eslint/utils": "^8.31.1",
+    "eslint": "^9.25.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@types/eslint": "^9.6.1",
+    "@types/eslint__js": "^9.14.0",
+    "@types/node": "^22.15.3",
+    "@typescript-eslint/parser": "^8.31.1",
+    "@typescript-eslint/rule-tester": "^8.31.1",
+    "eslint-doc-generator": "^2.1.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.1",
+    "vitest": "^3.1.2"
+  }
+}
