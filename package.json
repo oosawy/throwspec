@@ -34,7 +34,8 @@
     "build:diagnostics": "tsc --build --diagnostics",
     "docs:init": "npm run build:clean && eslint-doc-generator --init-rule-docs",
     "docs:update": "npm run build:clean && eslint-doc-generator",
-    "test": "vitest"
+    "test": "vitest",
+    "check": "tsc && vitest run"
   },
   "license": "MIT",
   "dependencies": {
