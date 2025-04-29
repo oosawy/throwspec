@@ -1,4 +1,3 @@
-import { RuleCreator } from '@typescript-eslint/utils/eslint-utils'
 import { createRule } from '../utils'
 import { ESLintUtils, TSESTree } from '@typescript-eslint/utils'
 import ts from 'typescript'

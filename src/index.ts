@@ -21,4 +21,4 @@ const plugin: Plugin = {
   rules,
 }
 
-export = plugin
+export default plugin

@@ -1,5 +1,5 @@
 import tseslint from "typescript-eslint";
-import pluginThrowspec from "../lib/index.js";
+import pluginThrowspec from "../lib/index.mjs";
 
 export default tseslint.config({
   files: ["**/*.ts"],
